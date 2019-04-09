@@ -48,7 +48,7 @@ namespace Main
             // 
             // TxtNum2
             // 
-            this.TxtNum2.Location = new System.Drawing.Point(169, 29);
+            this.TxtNum2.Location = new System.Drawing.Point(253, 28);
             this.TxtNum2.Name = "TxtNum2";
             this.TxtNum2.Size = new System.Drawing.Size(100, 20);
             this.TxtNum2.TabIndex = 2;
@@ -56,7 +56,7 @@ namespace Main
             // LblResultado
             // 
             this.LblResultado.AutoSize = true;
-            this.LblResultado.Location = new System.Drawing.Point(197, 13);
+            this.LblResultado.Location = new System.Drawing.Point(264, 9);
             this.LblResultado.Name = "LblResultado";
             this.LblResultado.Size = new System.Drawing.Size(55, 13);
             this.LblResultado.TabIndex = 3;
@@ -70,7 +70,7 @@ namespace Main
             "*",
             "-",
             "+"});
-            this.CmbOperador.Location = new System.Drawing.Point(120, 28);
+            this.CmbOperador.Location = new System.Drawing.Point(163, 27);
             this.CmbOperador.Name = "CmbOperador";
             this.CmbOperador.Size = new System.Drawing.Size(43, 21);
             this.CmbOperador.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace Main
             // 
             // BtnOperar
             // 
-            this.BtnOperar.Location = new System.Drawing.Point(14, 69);
+            this.BtnOperar.Location = new System.Drawing.Point(51, 69);
             this.BtnOperar.Name = "BtnOperar";
             this.BtnOperar.Size = new System.Drawing.Size(75, 23);
             this.BtnOperar.TabIndex = 4;
@@ -88,7 +88,7 @@ namespace Main
             // 
             // BtnCerrar
             // 
-            this.BtnCerrar.Location = new System.Drawing.Point(176, 69);
+            this.BtnCerrar.Location = new System.Drawing.Point(244, 69);
             this.BtnCerrar.Name = "BtnCerrar";
             this.BtnCerrar.Size = new System.Drawing.Size(75, 23);
             this.BtnCerrar.TabIndex = 6;
@@ -98,7 +98,7 @@ namespace Main
             // 
             // BtnLimpiar
             // 
-            this.BtnLimpiar.Location = new System.Drawing.Point(95, 69);
+            this.BtnLimpiar.Location = new System.Drawing.Point(146, 69);
             this.BtnLimpiar.Name = "BtnLimpiar";
             this.BtnLimpiar.Size = new System.Drawing.Size(75, 23);
             this.BtnLimpiar.TabIndex = 5;
@@ -108,6 +108,7 @@ namespace Main
             // 
             // BtnConvertirABinario
             // 
+            this.BtnConvertirABinario.Enabled = false;
             this.BtnConvertirABinario.Location = new System.Drawing.Point(14, 98);
             this.BtnConvertirABinario.Name = "BtnConvertirABinario";
             this.BtnConvertirABinario.Size = new System.Drawing.Size(112, 23);
@@ -118,7 +119,8 @@ namespace Main
             // 
             // BtnConvertirADecimal
             // 
-            this.BtnConvertirADecimal.Location = new System.Drawing.Point(142, 98);
+            this.BtnConvertirADecimal.Enabled = false;
+            this.BtnConvertirADecimal.Location = new System.Drawing.Point(244, 98);
             this.BtnConvertirADecimal.Name = "BtnConvertirADecimal";
             this.BtnConvertirADecimal.Size = new System.Drawing.Size(109, 23);
             this.BtnConvertirADecimal.TabIndex = 8;
@@ -131,7 +133,7 @@ namespace Main
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(282, 129);
+            this.ClientSize = new System.Drawing.Size(365, 129);
             this.Controls.Add(this.BtnConvertirADecimal);
             this.Controls.Add(this.BtnConvertirABinario);
             this.Controls.Add(this.BtnLimpiar);

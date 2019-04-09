@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace Main
 {
@@ -26,40 +27,19 @@ namespace Main
       this.FormBorderStyle = FormBorderStyle.FixedSingle;
       this.CenterToScreen();
     }
-    private static double Operar(string num1, string num2, string operador)
-    {
-      double doble2, doble1;
-      if (double.TryParse(num1, out doble1) && double.TryParse(num2, out doble2))
-      {
-        switch (operador)
-        {
-          case "/":
-            return doble1 / doble2;
-          case "*":
-            return doble1 * doble2;
-          case "-":
-            return doble1 - doble2;
-          case "+":
-            return doble1 + doble2;
-          default:
-            return 0;
-        }
-      }
-      return 0;
-    }
+    
 
     private void BtnLimpiar_Click(object sender, EventArgs e)
     {
-      this.TxtNum1.Text = "";
-      this.TxtNum2.Text = "";
-      this.CmbOperador.Text = "/";
-      this.LblResultado.Text = "Resultado";
+      this.limpiar();
+      this.BtnConvertirABinario.Enabled = false;
+      this.BtnConvertirADecimal.Enabled = false;
     }
 
     private void BtnOperar_Click(object sender, EventArgs e)
     {
-      this.LblResultado.Text = ""+
-        Operar(this.TxtNum1.Text, this.TxtNum2.Text, this.CmbOperador.Text);
+      this.BtnConvertirABinario.Enabled = true;
+      this.LblResultado.Text = Operar(this.TxtNum1.Text, this.TxtNum2.Text, this.CmbOperador.Text).ToString();
     }
 
     private void BtnCerrar_Click(object sender, EventArgs e)
@@ -69,46 +49,35 @@ namespace Main
 
     private void BtnConvertirABinario_Click(object sender, EventArgs e)
     {
-      double num;
-      double.TryParse(this.LblResultado.Text, out num);
-      string cadena="";
-      if ((int)num > 0)
-      {
-        while ((int)num > 0)
-        {
-          if ((int)num % 2 == 0)
-            cadena = "0" + cadena;
-          else
-            cadena = "1" + cadena;
-          num = ((int)num / 2);
-        }
-      }
-      else if ((int)num == 0)
-      {
-        cadena = "0";
-      }
-      else
-        cadena = "Valor invalido";
-
-      this.LblResultado.Text = cadena;
+      this.BtnConvertirADecimal.Enabled = true;
+      this.LblResultado.Text = Numero.DecimalBinario(this.LblResultado.Text);
+      this.BtnConvertirABinario.Enabled = false;
     }
 
     private void BtnConvertirADecimal_Click(object sender, EventArgs e)
     {
-      if (esBinario(this.LblResultado.Text))
-      {
-        this.LblResultado.Text = Convert.ToInt32(this.LblResultado.Text, 2).ToString();
-      }
-      else
-        this.LblResultado.Text = "Valor invalido";
+      this.BtnConvertirABinario.Enabled = true;
+      this.LblResultado.Text = Convert.ToInt32(Numero.BinarioDecimal(this.LblResultado.Text),2).ToString();
+      this.BtnConvertirADecimal.Enabled = false;
     }
 
-    static bool esBinario(string palabra)
+    void limpiar()
     {
-      foreach (var obj in palabra)
-        if (obj != '0' && obj != '1')
-          return false;
-      return true;
+      this.TxtNum1.Text = "";
+      this.TxtNum2.Text = "";
+      this.CmbOperador.Text = "/";
+      this.LblResultado.Text = "Resultado";
+
     }
+
+    private static double Operar(string numero1, string numero2, string operador)
+    {
+      Numero num1 = new Numero(numero1);
+      Numero num2 = new Numero(numero2);
+
+      return Calculadora.Operar(num1, num2, operador);
+    }
+
+
   }
 }
