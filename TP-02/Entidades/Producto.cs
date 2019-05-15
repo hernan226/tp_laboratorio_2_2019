@@ -11,6 +11,9 @@ namespace Entidades_2018
     /// </summary>
     public abstract class Producto
     {
+        /// <summary>
+        /// Enumerado con las marcas de los productos.
+        /// </summary>
         public enum EMarca
         {
             Serenisima, Campagnola, Arcor, Ilolay, Sancor, Pepsico
@@ -21,15 +24,15 @@ namespace Entidades_2018
 
         public Producto(EMarca marca, string codigoDeBarras, ConsoleColor colorPrimarioEmpaque)
         {
-          this.marca = marca;
-          this.codigoDeBarras = codigoDeBarras;
-          this.colorPrimarioEmpaque = colorPrimarioEmpaque;
+            this.marca = marca;
+            this.codigoDeBarras = codigoDeBarras;
+            this.colorPrimarioEmpaque = colorPrimarioEmpaque;
         }
 
         /// <summary>
         /// ReadOnly: Retornará la cantidad de calorias del producto
         /// </summary>
-        protected abstract short CantidadCalorias { get;}
+        protected abstract short CantidadCalorias { get; }
 
         /// <summary>
         /// Publica todos los datos del Producto.
@@ -40,6 +43,7 @@ namespace Entidades_2018
             return (string)this;
         }
 
+        #region Operadores
 
         public static explicit operator string(Producto p)
         {
@@ -63,6 +67,7 @@ namespace Entidades_2018
         {
             return (v1.codigoDeBarras == v2.codigoDeBarras);
         }
+
         /// <summary>
         /// Dos productos son distintos si su código de barras es distinto
         /// </summary>
@@ -72,6 +77,7 @@ namespace Entidades_2018
         public static bool operator !=(Producto v1, Producto v2)
         {
             return (v1 == v2);
-        }
+        } 
+        #endregion
     }
 }

@@ -23,7 +23,7 @@ namespace Entidades_2018
         {
             this.productos = new List<Producto>();
         }
-        public Changuito(int espacioDisponible):this()
+        public Changuito(int espacioDisponible) : this()
         {
             this.espacioDisponible = espacioDisponible;
         }
@@ -88,14 +88,14 @@ namespace Entidades_2018
         public static Changuito operator +(Changuito c, Producto p)
         {
             if (c.productos.Count < c.espacioDisponible)
-            {              
-              foreach (Producto v in c.productos)
-              {
-                  if (v == p)
-                      return c;
-              }
+            {
+                foreach (Producto v in c.productos)
+                {
+                    if (v == p)
+                        return c;
+                }
 
-              c.productos.Add(p);
+                c.productos.Add(p);
             }
             return c;
         }
@@ -109,11 +109,11 @@ namespace Entidades_2018
         {
             for (int i = 0; i < c.productos.Count; i++)
             {
-              if (c.productos[i] == p)
-              {
-                  c.productos.RemoveAt(i);
-                  break;
-              }
+                if (c.productos[i] == p)
+                {
+                    c.productos.RemoveAt(i);
+                    break;
+                }
             }
             /*
             foreach (Producto v in c.productos)

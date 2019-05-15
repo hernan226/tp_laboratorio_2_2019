@@ -13,21 +13,24 @@ namespace Entidades_2018
         public enum ETipo { Entera, Descremada }
         ETipo tipo;
 
+
+        #region Constructores
         /// <summary>
-        /// Por defecto, TIPO será ENTERA
+        /// Por defecto, TIPO será ENTERA.
         /// </summary>
         /// <param name="marca"></param>
         /// <param name="patente"></param>
         /// <param name="color"></param>
         public Leche(EMarca marca, string patente, ConsoleColor color)
-            : this( marca, patente, color, ETipo.Entera) { }
+            : this(marca, patente, color, ETipo.Entera) { }
 
         public Leche(EMarca marca, string patente, ConsoleColor color, ETipo tipo)
             : base(marca, patente, color)
         {
             this.tipo = tipo;
-        }
-    
+        } 
+        #endregion
+
         /// <summary>
         /// Las leches tienen 20 calorías
         /// </summary>

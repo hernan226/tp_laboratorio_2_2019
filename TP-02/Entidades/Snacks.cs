@@ -9,9 +9,8 @@ namespace Entidades_2018
     public class Snacks : Producto
     {
         public Snacks(EMarca marca, string patente, ConsoleColor color)
-            : base(marca, patente, color)
-        {
-        }
+            : base(marca, patente, color) { }
+
         /// <summary>
         /// Los snacks tienen 104 calorías
         /// </summary>
@@ -22,6 +21,7 @@ namespace Entidades_2018
                 return 104;
             }
         }
+
         /// <summary>
         /// Publica todos los datos del Snack.
         /// </summary>
