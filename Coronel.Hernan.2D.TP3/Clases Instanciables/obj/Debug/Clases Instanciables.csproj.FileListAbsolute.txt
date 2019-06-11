@@ -1,0 +1,11 @@
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\bin\Debug\Clases Instanciables.dll
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\bin\Debug\Clases Instanciables.pdb
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\bin\Debug\Clases Abstractas.dll
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\bin\Debug\Excepciones.dll
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\bin\Debug\Clases Abstractas.pdb
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\bin\Debug\Excepciones.pdb
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csprojAssemblyReference.cache
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CoreCompileInputs.cache
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.csproj.CopyComplete
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.dll
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Clases Instanciables\obj\Debug\Clases Instanciables.pdb

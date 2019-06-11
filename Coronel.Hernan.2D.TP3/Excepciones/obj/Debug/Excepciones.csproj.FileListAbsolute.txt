@@ -1,0 +1,6 @@
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\herna\Desktop\Coronel.Hernan.2D.TP3\Excepciones\obj\Debug\Excepciones.pdb
